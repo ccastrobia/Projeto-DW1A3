@@ -1,0 +1,206 @@
+<!-- Autoria: Gustavo -->
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>SAGe - Processos</title>
+		<link rel="shortcut icon" href="img/icon-sage.png">
+		<link rel ="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<script src="sweetalert2/dist/sweetalert2.min.js"></script>
+		<script src="js/sweetalert2.js"></script>
+		<link rel="stylesheet" href="sweetalert2/dist/sweetalert2.min.css">
+		<script type="text/javascript" src="js/sage-fapesp.js"></script>
+    </head>
+    <body class="initial-teste">
+
+        <section id="linguagem" class="row justify-content-end">	
+			<section class="col-12 col-sm-3 col-md-3 col-xs-3">
+				<div class="float-sm-right mr-sm-3">
+					<a href="#" class="text-white">English
+					<img class="language" src="img/global-white.svg"  alt="language"></a>
+				</div>
+			</section>
+		</section>
+
+		<div class="row" class="titulo-pagina-inicial" class="col-12 col-sm-3 col-md-3 col-xs-3">
+			<div  class="figura-barra-titulo">
+				<a href="pagina-inicial.html"><img id="logo-sage" src="img/logo-sage.png" class="rounded float-left" alt="Logo SAGe"></a>
+			</div>
+			<div class="titulo-barra-titulo" class="col-4">
+				<h3 class="text-white" class="align-middle">Sistema de Apoio à Gestão de Fomento</h3>
+			</div>
+			<div class="nome-barra-titulo" class="col-2">
+				<p class="text-white" class="align-middle">Bem vindo(a), Usuário!</p>
+			</div>
+			<div class="user-barra-titulo" class="col-4" class="row justify-content-end">
+				<img id="icone-user" src="img/icon-user.png" class="rounded float-right" alt="Foto de Perfil">
+			</div>
+		</div>
+
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<span class="navbar-toggler-icon"></span>
+			<div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="pagina-inicial.html">Página Inicial</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Meus Dados</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Alteração de Cadastro</a>
+							<a class="dropdown-item" href="#">Alteração de Senha</a>
+							</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Processos
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="pagina-processos.html">Meus Processos</a>
+							<a class="dropdown-item" href="#">Processos que Participo</a>
+							<a class="dropdown-item" href="#">Processos para Confirmar Participação</a>
+							<a class="dropdown-item" href="#">Concessão de Permissão de Acesso</a>
+							<a class="dropdown-item" href="#">Minhas Importações</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Propostas
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Nova Proposta Inicial</a>
+							<a class="dropdown-item" href="pagina-propostas.html">Minhas Propostas</a>
+							<a class="dropdown-item" href="#">Propostas de que Participo</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Solicitações
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Cadastro de Reunião</a>
+							<a class="dropdown-item" href="#">Propostas de que Participo</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Manuais</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Sair</a>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+					<button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Pesquisar</button>
+				</form>
+			</div>
+        </nav>
+		
+		<!-- Nav dos "Meus Processos (Gustavo)-->
+		<div id="informacoes-home">
+			<div class="row justify-content-center"> <!-- Centralizando nav (Gabriela)-->
+				<div class="col-auto"> <!-- Centralizando nav (Gabriela)-->
+					<ul class="nav nav-pills mb-2 px-2 " id="pills-tab" role="tablist">
+						<li class="nav-item" role="presentation">
+							<a class="nav-link active" id="pills-id_processo-tab" data-toggle="pill" href="#pills-id_processo" role="tab" aria-controls="pills-id_processo" aria-selected="true">Identificação do Processo</a>
+						</li>
+						<li class="nav-item" role="presentation">
+							<a class="nav-link" id="pills-responsabilidades-tab" data-toggle="pill" href="#pills-responsabilidades" role="tab" aria-controls="pills-responsabilidades" aria-selected="false">Responsabilidades</a>
+						</li>
+						<li class="nav-item" role="presentation">
+							<a class="nav-link" id="pills-rs_uss-tab" data-toggle="pill" href="#pills-rs_uss" role="tab" aria-controls="pills-rs_uss" aria-selected="false">R$ / US$</a>
+						</li>
+						<li class="nav-item" role="presentation">
+							<a class="nav-link" id="pills-documentos-tab" data-toggle="pill" href="#pills-documentos" role="tab" aria-controls="pills-documentos" aria-selected="false">Documentos</a>
+						</li>
+						<li class="nav-item" role="presentation">
+							<a class="nav-link" id="pills-obs_man-tab" data-toggle="pill" href="#pills-obs_man" role="tab" aria-controls="pills-obs_man" aria-selected="false">Observações / Manifestações</a>
+						</li>                   
+					</ul>
+			</div>
+		</div>
+
+		<!-- Tabela Identificação do Processo (Gustavo)-->
+			<div class="tab-content" id="pills-tabContent">
+				<div class="tab-pane fade show active" id="pills-id_processo" role="tabpanel" aria-labelledby="pills-id_processo-tab">
+					<div class="row justify-content-center"> <!-- Centralizando tabela (Gabriela)-->
+						<div class="col-auto"> <!-- Centralizando tabela (Gabriela)-->
+							<table class="table table-borderless">
+								<tbody>
+									<tr>
+										<th scope="row">Processo</th>
+										<td>Ano/Número do Processo</td>
+									</tr>
+									<tr>
+										<th scope="row">Grupo de Financiamento</th>
+										<td>Bolsa no País</td>
+									</tr>
+									<tr>
+										<th scope="row">Linha de Fomento</th>
+										<td>Tipo de Bolsa</td>
+									</tr>
+									<tr>
+										<th scope="row">Beneficiário</th>
+										<td>Nome do Beneficiário</td>
+									</tr>
+									<tr>
+										<th scope="row">Responsável</th>
+										<td>Nome do Responsável</td>
+									</tr>	
+									<tr>
+										<th scope="row">Data de Início</th>
+										<td>DD/MM/AAAA</td>
+									</tr>
+									<tr>
+										<th scope="row">Vínculo Institucional do Processo</th>
+										<td>Nome da Instituição</td>
+									</tr>
+									<tr>
+										<th scope="row">Processo Vinculado</th>
+										<td>Ano/Número do Processo</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>	
+				</div>
+
+				<!-- Formulário das responsabilidades (Gabriela)-->
+				<div class="tab-pane fade" id="pills-responsabilidades" role="tabpanel" aria-labelledby="pills-responsabilidades-tab">
+					<div class="row justify-content-center">
+						<div class="col-auto">
+							<select class="form-control">
+								<option selected>Escolha a opção</option>
+								<option>Elaborar Ata de Defesa</option>
+								<option>Elaborar Relatório Científico</option>
+								<option>Elaborar/Submeter Solicitação de Mudanças</option>
+								<option>Emitir Contratos e Aditivos</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="pills-rs_uss" role="tabpanel" aria-labelledby="pills-rs_uss-tab">...</div>
+				<div class="tab-pane fade" id="pills-documentos" role="tabpanel" aria-labelledby="pills-documentos-tab">...</div>
+				<div class="tab-pane fade" id="pills-obs_man" role="tabpanel" aria-labelledby="pills-obs_man-tab">...</div>
+			</div>
+		</div>
+		
+		<section id="footer">
+			<div class="informacoes-footer" >
+				<p>
+					<a class="text-white" href="pagina-mapasite.html">Mapa do Site</a>
+				</p>
+				<p class="text-white">Entre em contato:  +55 (11) 3838-4000</p>
+				<p class="text-white"> FAPESP - Fundação de Amparo à Pesquisa do Estado de São Paulo</p>
+				<p><img id="logo-fapesp-footer" src="img/logo-fapesp.png"  alt="Logo Fapesp"></p>
+			<div>	
+		</section>
+
+		<script src="js/jquery-3.5.1.slim.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/sage-fapesp.js"></script>
+    </body>
+</html>
